@@ -1,1 +1,1 @@
-this is a shopwebapp project
+this is a shopwebapp
