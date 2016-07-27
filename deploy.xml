@@ -19,19 +19,4 @@
 	</target>
 	<target name="deploy-all" depends="stop,undeploy,deploy,start"/>
 
-	<!-- <target name="check-deploy" >
-		  <condition property="isfiledeployed">
-		  	<available file="${tomcat_home}/webapps/${app.name}" type="file" />
-		  </condition>
-		 <antcall target="deploy-tomcat" />
-			<antcall target="undeploy-tomcat" />
-		</target>
-		<target name="deploy-tomcat" unless="isfiledeployed">
-			<copy file="${war.dir}/${app.name}" todir="${tomcat_home}/webapps"/>
-		</target>
-		<target name="undeploy-tomcat" if="isfiledeployed">
-			<delete file="${tomcat_home}/webapps/${app.name}"/>
-			
-		</target> -->
-
 </project>
